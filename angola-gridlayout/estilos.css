@@ -1,0 +1,124 @@
+body {
+    margin:0;
+    font-family: myFont;
+    font-size: 16px;
+    color: black;
+    line-height: 1.6;
+    background-color: #b80226;
+    background-image: url(./img/Luanda_Collage.png);
+}
+
+@font-face{
+    font-family: myFont ;
+    src: url(./font/Vasca.ttf);
+}
+
+.conteiner{
+    margin: 0 auto;
+    width: 990px;
+    padding: 30px;
+    /* background-color:white; */
+    background-image: url(./img/original.png);
+    text-align: center;
+    color: black;
+    background-image: linear-gradient(#196604, #4FB20A, #316623, #2CB307, #39E60A, #71EA4F);
+}
+
+.grid-conteiner{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 30px;
+    font-size: 18px;
+    background-image: linear-gradient(#196604, #4FB20A, #316623, #2CB307, #39E60A, #71EA4F);
+}
+
+.grid-title{
+    font-size: 30px;
+
+}
+
+.grid-card{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    padding: 10px;
+    background-color: #CC092F;
+    border-style: solid;
+    border: solid;
+    border-color:#b80226;
+    border-width: 15px;
+    border-radius: 20px; 
+}
+
+.grid-card1{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    padding: 10px;
+    background-color: #CC092F;
+    border-style: solid;
+    border: solid;
+    border-color:#ebbd05;
+    border-width: 15px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.grid-item{
+    grid-column: 1 / span 2;
+    text-align: center;
+
+}
+
+.card img{
+    float: left;
+    margin:10px;
+}
+
+.button{
+    text-decoration: none;
+    background-color: #D1B000;
+    color: #FFF;
+    padding: 15px;
+    border: 5px solid #FFF;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+
+.link{
+    margin-top: 20px;
+    text-align: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.outline-1{
+    background-color: #b80226;
+    padding: 13px;
+    border-radius: 32px;
+}
+
+.outline-2{
+    background-color: #e7bb09;
+    padding: 13px;
+    border-radius: 32px;
+}
+
+.outline-3{
+    background-color: #b80226;
+    padding: 13px;
+    border-radius: 32px;
+}
+
+.grid-color{
+    background-color: #FFCB00;
+}
+
+.big-button
+    a:link, a:visited, :active {text-decoration: none;}
+    a:hover {text-decoration:solid color #D1B000; font-size:25px}
