@@ -1,0 +1,115 @@
+.grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 240px;
+  padding-left: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navlist {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+  align-items: center;
+  padding: 12px;
+  background-color: #000000;
+  color: #fff;
+  margin: 0px;
+}
+
+.navlist i {
+  list-style-type: none;
+}
+
+.navlist img {
+  width: 95px;
+}
+
+@font-face{
+  font-family: 'CustomFont';
+  src: url(./font/Basketball.otf);
+}
+
+.text-box {
+  position: absolute;
+  top: 165px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 55px;
+  font-family: Customfont;
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5 {
+  display: flex;
+  justify-content: center;
+}
+
+.box-1{
+  padding: 40px 40px;
+  width: 150px;
+  height: 100%;
+  box-shadow: 5px 5px 30px black;
+  transition: all ease .70s;
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-color: #000000;
+} 
+
+.box-1:hover{
+  transform: scale(1.4);
+  background-color: #007A33;
+  border-color: #007A33;
+}
+
+.box-2{
+  padding: 41px 40px;
+  width: 150px;
+  height: 100%;
+  box-shadow: 5px 5px 30px black;
+  transition: all ease .70s;
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-color: #000000;
+}
+
+.box-2:hover{
+  transform: scale(1.4);
+  background-color: #000;
+}
+
+.box-3{
+  padding: 65px 40px;
+  width: 150px;
+  height: 100%;
+  box-shadow: 5px 5px 30px black;
+  transition: all ease .70s;
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-color: #000000;
+}
+
+.box-3:hover{
+  transform: scale(1.4);
+  background-color: #FDB927;
+  border-color: #FDB927;
+}
+
+.box-3 img{
+  width: 100%;
+}

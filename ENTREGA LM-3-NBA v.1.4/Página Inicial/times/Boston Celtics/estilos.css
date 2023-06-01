@@ -1,0 +1,1268 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+  font-family: MainFont;
+}
+
+@font-face {
+  font-family: "MainFont";
+  src: url(./font/futura-std-book.otf);
+}
+
+@font-face {
+  font-family: "TitleFont";
+  src: url(font/futura-std-bold.otf);
+}
+
+@font-face{
+  font-family: "FooterFont";
+  src: url(./font/Boldstrom\ D.otf);
+}
+
+@font-face{
+  font-family: "FooterFont-2";
+  src: url(./font/TolyerNo1-Light.ttf);
+}
+
+.container {
+  margin: 0 auto;
+  width: 1600px;
+  padding: 0;
+  background-color: #ffffff;
+  height: 2500px;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+}
+
+.item-1 {
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 1910px;
+  height: 1840px;
+  position: relative;
+}
+
+.container-img {
+  margin-left: 300px;
+  width: 100%;
+  height: 1035px;
+}
+
+.content-img2 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  padding-left: 30px;
+  left: 0;
+  top: 0;
+}
+
+.content-img3 {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  padding-left: 30px;
+  padding-top: 150px;
+  left: 0;
+  top: 0;
+}
+
+.item-2 {
+  background-image: linear-gradient(
+    to bottom,
+    #25593c,
+    #4d7b57,
+    #95c387,
+    #9bd18b,
+    #b0e4a0
+  );
+  width: 1910px;
+  height: 1600px;
+  display: flex;
+  position: relative;
+  margin-top: -853px;
+}
+
+.title-1 {
+  font-family: TitleFont;
+  color: #ffffff;
+  padding-left: 200px;
+  padding-top: 30px;
+  font-size: 40px;
+  display: flex;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.text-1 {
+  margin-left: 15px;
+  font-family: MainFont;
+  color: #ffffff;
+  padding-left: 50px;
+  font-size: 20px;
+  display: flex;
+  width: 500px;
+  direction: rtl;
+  text-align: center;
+}
+
+.box-1 {
+  width: 320px;
+  height: 400px;
+  padding: 0;
+  box-shadow: 5px 5px 30px black;
+  transition: all ease 0.7s;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 7%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  margin: 0;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: fade-in-box 1s forwards;
+}
+
+@keyframes fade-in-box {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.box-1 img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imagecontainer {
+  display: inline-block;
+}
+
+.legenda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 327px;
+}
+
+.legenda h1 {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px;
+  margin: 5px;
+}
+
+.imagecontainer:hover .legenda {
+  opacity: 1;
+}
+
+.box-2 {
+  width: 312px;
+  height: 405px;
+  padding: 0;
+  box-shadow: 5px 5px 30px black;
+  transition: all ease 0.7s;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 6.8%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: fade-in-box 1s forwards;
+}
+
+@keyframes fade-in-box {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.box-2 img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.legenda-2 {
+  position: absolute;
+  bottom: 0;
+  left: 1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: 312px;
+}
+
+.legenda-2 h1 {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px;
+  margin: 5px;
+}
+
+.imagecontainer:hover .legenda-2 {
+  opacity: 1;
+}
+
+.text-2 {
+  margin-right: 1350px;
+  font-family: MainFont;
+  color: #103620;
+  margin-left: -170px;
+  margin-top: 580px;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  width: 500px;
+  text-align: center;
+}
+
+.text-3 {
+  margin-right: 150px;
+  font-family: MainFont;
+  color: #000000;
+  padding-right: 550px;
+  margin-top: 995px;
+  margin-left: -1220px;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  width: 500px;
+  text-align: center;
+}
+
+.video-box {
+  width: 800px;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-left: 50px;
+  margin-top: 485px;
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: fade-in-video-box 1s forwards;
+}
+
+@keyframes fade-in-video-box {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.video-box::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-left: 15px;
+}
+
+.item-3 {
+  background-image: linear-gradient(
+    #b0e4a0,
+    #b6eea6,
+    #bbeead,
+    #caf1bf,
+    #d2f0ca
+  );
+  width: 1910px;
+  height: 1600px;
+  display: flex;
+  position: relative;
+  margin-top: -20px;
+  justify-content: center;
+  align-content: center;
+}
+
+.title-2 {
+  font-family: TitleFont;
+  color: black;
+  padding-top: 100px;
+  font-size: 50px;
+  display: flex;
+  height: fit-content;
+  text-align: center;
+}
+
+.content-img {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: fit-content;
+  margin-top: 350px;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.card-1 {
+  display: block;
+  width: 350px;
+  background-color: #ffffff;
+  height: 400px;
+  padding: 0;
+  border-style: solid;
+  border-radius: 33px;
+}
+
+.card-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 30px;
+}
+
+.card-flip {
+  position: relative;
+}
+
+.card-flip > .card-1,
+.card-flip > .back {
+  display: block;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 0.5s;
+  transition-property: transform, opacity;
+}
+
+.card-flip > .card-1 {
+  transform: rotateY(0deg);
+}
+
+.card-flip > .back {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+}
+
+.card-flip:hover > .card-1 {
+  transform: rotateY(180deg);
+}
+
+.card-flip:hover > .back {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.card-flip {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+}
+
+.card-flip img {
+  width: 100%;
+}
+
+.card-flip > .card-1,
+.card-flip > .back {
+  display: block;
+  width: 350px;
+  background-color: #ffffff;
+  height: 400px;
+  padding: 0;
+  border-style: solid;
+  border-radius: 33px;
+}
+
+.card-flip > .card-1 h2,
+.card-flip > .back h2 {
+  font-size: 30px;
+  line-height: 160%;
+  color: black;
+  margin-left: 10px;
+}
+
+.card-flip > .card-1 h2 span,
+.card-flip > .back h2 span {
+  font-size: 20px;
+  line-height: 160%;
+  color: black;
+  margin: 0px;
+}
+
+.card-flip > .card-1 p,
+.card-flip > .back p {
+  font-size: 15px;
+  line-height: 160%;
+  color: black;
+  margin-left: 10px;
+  margin-top: -13px;
+}
+
+.card-flip > .back a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.card-2 {
+  display: block;
+  width: 350px;
+  background-color: #ffffff;
+  height: 400px;
+  padding: 0;
+  border-style: solid;
+  border-radius: 33px;
+}
+
+.card-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 30px;
+}
+
+.card-flip-2 {
+  position: relative;
+}
+
+.card-flip-2 > .card-2,
+.card-flip-2 > .back-2 {
+  display: block;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 0.5s;
+  transition-property: transform, opacity;
+}
+
+.card-flip-2 > .card-2 {
+  transform: rotateY(0deg);
+}
+
+.card-flip-2 > .back-2 {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+}
+
+.card-flip-2:hover > .card-2 {
+  transform: rotateY(180deg);
+}
+
+.card-flip-2:hover > .back-2 {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.card-flip-2 {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+}
+
+.card-flip-2 img {
+  width: 100%;
+}
+
+.card-flip-2 > .card-2,
+.card-flip-2 > .back-2 {
+  display: block;
+  width: 350px;
+  background-color: #ffffff;
+  height: 400px;
+  padding: 0;
+  border-style: solid;
+  border-radius: 33px;
+}
+
+.card-flip-2 > .card-2 h2,
+.card-flip-2 > .back-2 h2 {
+  font-size: 30px;
+  line-height: 160%;
+  color: black;
+  margin-left: 10px;
+}
+
+.card-flip-2 > .card-2 h2 span,
+.card-flip-2 > .back-2 h2 span {
+  font-size: 20px;
+  line-height: 160%;
+  color: black;
+  margin: 0px;
+}
+
+.card-flip-2 > .card-2 p,
+.card-flip-2 > .back-2 p {
+  font-size: 15px;
+  line-height: 160%;
+  color: black;
+  margin-left: 10px;
+  margin-top: -13px;
+}
+
+.card-flip-2 > .back-2 a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.card-3 {
+  display: block;
+  width: 350px;
+  background-color: #ffffff;
+  height: 400px;
+  padding: 0;
+  border-style: solid;
+  border-radius: 33px;
+}
+
+.card-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 30px;
+}
+
+.card-flip-3 {
+  position: relative;
+}
+
+.card-flip-3 > .card-3,
+.card-flip-3 > .back-3 {
+  display: block;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 0.5s;
+  transition-property: transform, opacity;
+}
+
+.card-flip-3 > .card-3 {
+  transform: rotateY(0deg);
+}
+
+.card-flip-3 > .back-3 {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+}
+
+.card-flip-3:hover > .card-3 {
+  transform: rotateY(180deg);
+}
+
+.card-flip-3:hover > .back-3 {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.card-flip-3 {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+}
+
+.card-flip-3 img {
+  width: 100%;
+}
+
+.card-flip-3 > .card-3,
+.card-flip-3 > .back-3 {
+  display: block;
+  width: 350px;
+  background-color: #ffffff;
+  height: 400px;
+  padding: 0;
+  border-style: solid;
+  border-radius: 33px;
+}
+
+.card-flip-3 > .card-3 h2,
+.card-flip-3 > .back-3 h2 {
+  font-size: 30px;
+  line-height: 160%;
+  color: black;
+  margin-left: 10px;
+}
+
+.card-flip-3 > .card-3 h2 span,
+.card-flip-3 > .back-3 h2 span {
+  font-size: 20px;
+  line-height: 160%;
+  color: black;
+  margin: 0px;
+}
+
+.card-flip-3 > .card-3 p,
+.card-flip-3 > .back-3 p {
+  font-size: 15px;
+  line-height: 160%;
+  color: black;
+  margin-left: 10px;
+  margin-top: -13px;
+}
+
+.card-flip-3 > .back-3 a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.card-4 {
+  display: block;
+  width: 350px;
+  background-color: #ffffff;
+  height: 400px;
+  padding: 0;
+  border-style: solid;
+  border-radius: 33px;
+}
+
+.card-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 30px;
+}
+
+.card-flip-4 {
+  position: relative;
+}
+
+.card-flip-4 > .card-4,
+.card-flip-4 > .back-4 {
+  display: block;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 0.5s;
+  transition-property: transform, opacity;
+}
+
+.card-flip-4 > .card-4 {
+  transform: rotateY(0deg);
+}
+
+.card-flip-4 > .back-4 {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+}
+
+.card-flip-4:hover > .card-4 {
+  transform: rotateY(180deg);
+}
+
+.card-flip-4:hover > .back-4 {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.card-flip-4 {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+}
+
+.card-flip-4 img {
+  width: 100%;
+}
+
+.card-flip-4 > .card-4,
+.card-flip-4 > .back-4 {
+  display: block;
+  width: 350px;
+  background-color: #ffffff;
+  height: 400px;
+  padding: 0;
+  border-style: solid;
+  border-radius: 33px;
+}
+
+.card-flip-4 > .card-4 h2,
+.card-flip-4 > .back-4 h2 {
+  font-size: 30px;
+  line-height: 160%;
+  color: black;
+  margin-left: 10px;
+}
+
+.card-flip-4 > .card-4 h2 span,
+.card-flip-4 > .back-4 h2 span {
+  font-size: 20px;
+  line-height: 160%;
+  color: black;
+  margin: 0px;
+}
+
+.card-flip-4 > .card-4 p,
+.card-flip-4 > .back-4 p {
+  font-size: 15px;
+  line-height: 160%;
+  color: black;
+  margin-left: 10px;
+  margin-top: -13px;
+}
+
+.card-flip-4 > .back-4 a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.card-5 {
+  display: inline-block;
+  width: 350px;
+  background-color: #ffffff;
+  height: 400px;
+  padding: 0;
+  border-style: solid;
+  border-radius: 33px;
+}
+
+.card-5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 30px;
+}
+
+.card-flip-5 {
+  position: relative;
+}
+
+.card-flip-5 > .card-5,
+.card-flip-5 > .back-5 {
+  display: block;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 0.5s;
+  transition-property: transform, opacity;
+}
+
+.card-flip-5 > .card-5 {
+  transform: rotateY(0deg);
+}
+
+.card-flip-5 > .back-5 {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+}
+
+.card-flip-5:hover > .card-5 {
+  transform: rotateY(180deg);
+}
+
+.card-flip-5:hover > .back-5 {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.card-flip-5 {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+}
+
+.card-flip-5 img {
+  width: 100%;
+}
+
+.card-flip-5 > .card-5,
+.card-flip-5 > .back-5 {
+  display: block;
+  width: 350px;
+  background-color: #ffffff;
+  height: 400px;
+  padding: 0;
+  border-style: solid;
+  border-radius: 33px;
+}
+
+.card-flip-5 > .card-5 h2,
+.card-flip-5 > .back-5 h2 {
+  font-size: 30px;
+  line-height: 160%;
+  color: black;
+  margin-left: 10px;
+}
+
+.card-flip-5 > .card-5 h2 span,
+.card-flip-5 > .back-5 h2 span {
+  font-size: 20px;
+  line-height: 160%;
+  color: black;
+  margin: 0px;
+}
+
+.card-flip-5 > .card-5 p,
+.card-flip-5 > .back-5 p {
+  font-size: 15px;
+  line-height: 160%;
+  color: black;
+  margin-left: 10px;
+  margin-top: -13px;
+}
+
+.card-flip-5 > .back-5 a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.card-6 {
+  display: inline-block;
+  width: 350px;
+  background-color: #ffffff;
+  height: 400px;
+  padding: 0;
+  border-style: solid;
+  border-radius: 33px;
+}
+
+.card-6 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 30px;
+}
+
+.card-flip-6 {
+  position: relative;
+}
+
+.card-flip-6 > .card-6,
+.card-flip-6 > .back-6 {
+  display: block;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 0.5s;
+  transition-property: transform, opacity;
+}
+
+.card-flip-6 > .card-6 {
+  transform: rotateY(0deg);
+}
+
+.card-flip-6 > .back-6 {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+}
+
+.card-flip-6:hover > .card-6 {
+  transform: rotateY(180deg);
+}
+
+.card-flip-6:hover > .back-6 {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.card-flip-6 {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+}
+
+.card-flip-6 img {
+  width: 100%;
+}
+
+.card-flip-6 > .card-6,
+.card-flip-6 > .back-6 {
+  display: block;
+  width: 350px;
+  background-color: #ffffff;
+  height: 400px;
+  padding: 0;
+  border-style: solid;
+  border-radius: 33px;
+}
+
+.card-flip-6 > .card-6 h2,
+.card-flip-6 > .back-6 h2 {
+  font-size: 30px;
+  line-height: 160%;
+  color: black;
+  margin-left: 10px;
+}
+
+.card-flip-6 > .card-6 h2 span,
+.card-flip-6 > .back-6 h2 span {
+  font-size: 20px;
+  line-height: 160%;
+  color: black;
+  margin: 0px;
+}
+
+.card-flip-6 > .card-6 p,
+.card-flip-6 > .back-6 p {
+  font-size: 15px;
+  line-height: 160%;
+  color: black;
+  margin-left: 10px;
+  margin-top: -13px;
+}
+
+.card-flip-6 > .back-6 a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.card-7 {
+  display: inline-block;
+  width: 350px;
+  background-color: #ffffff;
+  height: 400px;
+  padding: 0;
+  border-style: solid;
+  border-radius: 33px;
+}
+
+.card-7 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 30px;
+}
+
+.card-flip-7 {
+  position: relative;
+}
+
+.card-flip-7 > .card-7,
+.card-flip-7 > .back-7 {
+  display: block;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 0.5s;
+  transition-property: transform, opacity;
+}
+
+.card-flip-7 > .card-7 {
+  transform: rotateY(0deg);
+}
+
+.card-flip-7 > .back-7 {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+}
+
+.card-flip-7:hover > .card-7 {
+  transform: rotateY(180deg);
+}
+
+.card-flip-7:hover > .back-7 {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.card-flip-7 {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+}
+
+.card-flip-7 img {
+  width: 100%;
+}
+
+.card-flip-7 > .card-7,
+.card-flip-7 > .back-7 {
+  display: block;
+  width: 350px;
+  background-color: #ffffff;
+  height: 400px;
+  padding: 0;
+  border-style: solid;
+  border-radius: 33px;
+}
+
+.card-flip-7 > .card-7 h2,
+.card-flip-7 > .back-7 h2 {
+  font-size: 30px;
+  line-height: 160%;
+  color: black;
+  margin-left: 10px;
+}
+
+.card-flip-7 > .card-7 h2 span,
+.card-flip-7 > .back-7 h2 span {
+  font-size: 20px;
+  line-height: 160%;
+  color: black;
+  margin: 0px;
+}
+
+.card-flip-7 > .card-7 p,
+.card-flip-7 > .back-7 p {
+  font-size: 15px;
+  line-height: 160%;
+  color: black;
+  margin-left: 10px;
+  margin-top: -13px;
+}
+
+.card-flip-7 > .back-7 a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.card-8 {
+  display: inline-block;
+  width: 350px;
+  background-color: #ffffff;
+  height: 400px;
+  padding: 0;
+  border-style: solid;
+  border-radius: 33px;
+}
+
+.card-8 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 30px;
+}
+
+.card-flip-8 {
+  position: relative;
+}
+
+.card-flip-8 > .card-8,
+.card-flip-8 > .back-8 {
+  display: block;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 0.5s;
+  transition-property: transform, opacity;
+}
+
+.card-flip-8 > .card-8 {
+  transform: rotateY(0deg);
+}
+
+.card-flip-8 > .back-8 {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+}
+
+.card-flip-8:hover > .card-8 {
+  transform: rotateY(180deg);
+}
+
+.card-flip-8:hover > .back-8 {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.card-flip-8 {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  width: 300px;
+}
+
+.card-flip-8 img {
+  width: 100%;
+}
+
+.card-flip-8 > .card-8,
+.card-flip-8 > .back-8 {
+  display: block;
+  width: 350px;
+  background-color: #ffffff;
+  height: 400px;
+  padding: 0;
+  border-style: solid;
+  border-radius: 33px;
+}
+
+.card-flip-8 > .card-8 h2,
+.card-flip-8 > .back-8 h2 {
+  font-size: 30px;
+  line-height: 160%;
+  color: black;
+  margin-left: 10px;
+}
+
+.card-flip-8 > .card-8 h2 span,
+.card-flip-8 > .back-8 h2 span {
+  font-size: 20px;
+  line-height: 160%;
+  color: black;
+  margin: 0px;
+}
+
+.card-flip-8 > .card-8 p,
+.card-flip-8 > .back-8 p {
+  font-size: 15px;
+  line-height: 160%;
+  color: black;
+  margin-left: 10px;
+  margin-top: -13px;
+}
+
+.card-flip-8 > .back-8 a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.main-footer{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 300px;
+  padding-top: 10px;
+  gap: 30px;
+  margin-top: -20px;
+}
+
+.main-footer img{
+  width: 1910px;
+  height: 400px;
+  margin-top: -20px;
+}
+
+.main-footer p{
+  font-size: 50px;
+  font-family: 'FooterFont';
+  position: absolute;
+  margin-top: 100px;
+  margin-right: 400px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.main-footer span{
+  font-size: 30px;
+  margin-top: -20px;
+  display: block;
+  direction: rtl;
+  text-align: left;
+  font-family: 'Futura Now Text', sans-serif;
+  color: #fff;
+}
+
+.button {
+  position: absolute;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  padding: 8px 20px;
+  height: 50px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 230px;
+  margin-right: 630px;
+}
+
+.button h3 {
+  font-family: 'FooterFont-2';
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.button span{
+  font-family: 'FooterFont-2';
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button:hover {
+  transform: scale(1.3);
+  transition: transform 0.5s ease;
+}
