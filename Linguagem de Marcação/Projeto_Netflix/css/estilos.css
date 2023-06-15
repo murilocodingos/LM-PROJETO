@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body{
+        background-color: #1E1E1E;
+    }
+
+header {
+    background-image: linear-gradient(#070707, #0F0F0F, #121111);
+    height: 68px;
+    }
+
+img {
+    padding-left: 50px;
+    margin-top: -5px;
+    }
+
+.navlist {
+    display: flex;
+    padding-left: 200px;
+    }
+
+.navlist a {
+    color: white;
+    margin: 0 18px;
+    transition: all ease 0.15s;
+    list-style: none;
+    text-decoration: none;  
+    font-size: 18px;
+    font-family: 'Geologica', sans-serif;
+    margin-top: -58px;
+    }
